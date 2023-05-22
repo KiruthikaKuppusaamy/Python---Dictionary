@@ -1,0 +1,70 @@
+# Creating Dictionary
+aiml = {1:'Ajay',2:'Akshay',3:'Anjanaa'}
+print (" Data Type :",type(aiml))
+print ("Elements in the Dictionary :", aiml)
+
+languages_known = {'Ajay':2, 'Akshay':3, 'Anjanaa': 1}
+print(" Languages_known :", languages_known)
+______________________________________________________________________________
+output
+ Data Type : <class 'dict'>
+ Elements in the Dictionary : {1: 'Ajay', 2: 'Akshay', 3: 'Anjanaa'}
+ Languages_known : {'Ajay': 2, 'Akshay': 3, 'Anjanaa': 1}
+______________________________________________________________________________
+
+# Accessing Elements
+aiml = {1:'Ajay',2:'Akshay',3:'Anjanaa'}
+print ("Elements in the Dictionary :", aiml)
+print ("First Item :",aiml[1])
+print ("Second Item:",aiml[2])
+______________________________________________________________________________
+output
+Elements in the Dictionary : {1: 'Ajay', 2: 'Akshay', 3: 'Anjanaa'}
+First Item : Ajay
+Second Item: Akshay
+______________________________________________________________________________
+
+
+
+# Adding Elements
+aiml = {1:'Ajay',2:'Akshay',3:'Anjanaa'}
+print ("Elements in the Dictionary     :", aiml)
+
+aiml[4] = 'Abinaya'
+print ("Updated elements in Dictionary :", aiml)
+______________________________________________________________________________
+output
+lements in the Dictionary     : {1: 'Ajay', 2: 'Akshay', 3: 'Anjanaa'}
+Updated elements in Dictionary : {1: 'Ajay', 2: 'Akshay', 3: 'Anjanaa', 4: 'Abinaya'}
+______________________________________________________________________________
+
+
+
+
+# Deleting Elements
+aiml = {1:'Ajay',2:'Akshay',3:'Anjanaa',4:'Abinaya'}
+print ("Elements in the Dictionary     :", aiml)
+
+del aiml[2]
+print ("Elements after deleting        :", aiml)
+______________________________________________________________________________
+output
+Elements in the Dictionary     : {1: 'Ajay', 2: 'Akshay', 3: 'Anjanaa', 4: 'Abinaya'}
+Elements after deleting        : {1: 'Ajay', 3: 'Anjanaa', 4: 'Abinaya'}
+______________________________________________________________________________
+
+
+
+# Changing Elements
+aiml = {1:'Ajay',2:'Akshay',3:'Anjanaa',4:'Abinaya'}
+print ("Elements in the Dictionary     :", aiml)
+
+aiml[3] = 'Akshara'
+print ("Elements after changing item   :", aiml)
+______________________________________________________________________________
+output
+Elements in the Dictionary     : {1: 'Ajay', 2: 'Akshay', 3: 'Anjanaa', 4: 'Abinaya'}
+Elements after changing item   : {1: 'Ajay', 2: 'Akshay', 3: 'Akshara', 4: 'Abinaya'}
+______________________________________________________________________________
+
+

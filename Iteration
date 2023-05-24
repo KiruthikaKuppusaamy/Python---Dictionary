@@ -1,0 +1,79 @@
+# 1. keys using for loop
+colors = {'pink':2,'blue':5,'white':4,'green':2,'gray':0}
+print("Colors Rating :",colors)
+print("Keys in the Dictionary")
+for i in colors:
+    print (i)
+_____________________________________________________________________________________
+output
+Colors Rating : {'pink': 2, 'blue': 5, 'white': 4, 'green': 2, 'gray': 0}
+Keys in the Dictionary
+pink
+blue
+white
+green
+gray
+_____________________________________________________________________________________
+
+
+
+
+# 2. values using for loop
+colors = {'pink':2,'blue':5,'white':4,'green':2,'gray':0}
+print("Colors Rating :",colors)
+print("Values in the Dictionary")
+for i in colors:
+    print (colors[i])
+_____________________________________________________________________________________
+output
+Colors Rating : {'pink': 2, 'blue': 5, 'white': 4, 'green': 2, 'gray': 0}
+Values in the Dictionary
+2
+5
+4
+2
+0
+_____________________________________________________________________________________
+
+
+
+
+# 3. values using values()
+colors = {'pink':2,'blue':5,'white':4,'green':2,'gray':0}
+print("Colors Rating :",colors)
+print("Values in the Dictionary")
+for i in colors.values():
+    print (i)
+_____________________________________________________________________________________
+output
+Colors Rating : {'pink': 2, 'blue': 5, 'white': 4, 'green': 2, 'gray': 0}
+Values in the Dictionary
+2
+5
+4
+2
+0
+_____________________________________________________________________________________
+
+
+
+
+
+# 4. key/value pair using items ()
+colors = {'pink':2,'blue':5,'white':4,'green':2,'gray':0}
+print("Colors Rating :",colors)
+print("Items in the Dictionary")
+for i in colors.items():
+    print (i)
+_____________________________________________________________________________________
+output
+Colors Rating : {'pink': 2, 'blue': 5, 'white': 4, 'green': 2, 'gray': 0}
+Items in the Dictionary
+('pink', 2)
+('blue', 5)
+('white', 4)
+('green', 2)
+('gray', 0)
+_____________________________________________________________________________________
+  
+

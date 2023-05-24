@@ -12,6 +12,19 @@ output
  Languages_known : {'Ajay': 2, 'Akshay': 3, 'Anjanaa': 1}
 ______________________________________________________________________________
 
+
+# Creating Dictionary with mixed data types
+course = {'aiml':1,'aids':[1,2],'cse' :(1,2,3,4)}
+print ("Data Type :",type(course))
+print ("Elements in the Dictionary :", course)
+______________________________________________________________________________
+output
+Data Type : <class 'dict'>
+Elements in the Dictionary : {'aiml': 1, 'aids': [1, 2], 'cse': (1, 2, 3, 4)}
+______________________________________________________________________________
+
+
+
 # Accessing Elements
 aiml = {1:'Ajay',2:'Akshay',3:'Anjanaa'}
 print ("Elements in the Dictionary :", aiml)

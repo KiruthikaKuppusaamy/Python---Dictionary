@@ -104,14 +104,14 @@ print ("Update Item in the Dictionary using update() :", dept)
 
 dept1 = {6:'A',7:'B'}
 dept.update(dept1)
-print ("Updating Items in the Dictionary in the Dictionary :", dept)
+print ("Updating Items in the Dictionary :", dept)
 
 _________________________________________________________________________
 output
 Items in the Dictionary : {1: 'CSE', 2: 'IT', 3: 'CSBS', 4: 'AIDS', 5: 'AIML'}
 Update Item in the Dictionary using key : {1: 'CSE', 2: 'IT', 3: 'CSBS', 4: 'AI and DS', 5: 'AIML'}
 Update Item in the Dictionary using update() : {1: 'CSE', 2: 'IT', 3: 'CSBS', 4: 'AI and DS', 5: 'AI and ML'}
-Updating Items in the Dictionary in the Dictionary : {1: 'CSE', 2: 'IT', 3: 'CSBS', 4: 'AI and DS', 5: 'AI and ML', 6: 'A', 7: 'B'}
+Updating Items in the Dictionary : {1: 'CSE', 2: 'IT', 3: 'CSBS', 4: 'AI and DS', 5: 'AI and ML', 6: 'A', 7: 'B'}
 _________________________________________________________________________
 
 

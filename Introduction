@@ -68,3 +68,18 @@ Elements after changing item   : {1: 'Ajay', 2: 'Akshay', 3: 'Akshara', 4: 'Abin
 ______________________________________________________________________________
 
 
+
+# Membership operator
+aiml = {1:'Ajay',2:'Akshay',3:'Anjanaa',4:'Abinaya'}
+print ("Elements in the Dictionary   :", aiml)
+print ("Item '1' 'in' Dictionary     : ", 1 in aiml)
+print ("Item '5' 'in' Dictionary     : ", 5 in aiml)
+print ("Item '1' 'not in' Dictionary : ", 1 not in aiml)
+______________________________________________________________________________
+output
+Elements in the Dictionary   : {1: 'Ajay', 2: 'Akshay', 3: 'Anjanaa', 4: 'Abinaya'}
+Item '1' 'in' Dictionary     :  True
+Item '5' 'in' Dictionary     :  False
+Item '1' 'not in' Dictionary :  False
+______________________________________________________________________________
+

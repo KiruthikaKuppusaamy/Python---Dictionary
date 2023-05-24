@@ -93,26 +93,65 @@ _________________________________________________________________________
 
 
 # 6. update() - update the value in the Dictionary
-dept = {1:'CSE',2:'IT',3:'CSBS',4:'AIDS',5:'AIML'}
-print ("Items in the Dictionary :", dept)
+dept1 = {1:'CSE',2:'IT'}
+dept2 = {3:'CSBS',4:'AIDS'}
+print ("Old courses in CS Dept :", dept1)
+print ("New courses in CS Dept :", dept2)
 
-dept[4] = 'AI and DS'
-print ("Update Item in the Dictionary using key :", dept)
+print("\n\t\t ----- Different methods to update ----")
+print("Method 1")
+dept2.update({5:'AIML'})
+print ("Concatenated two dictionary :", dept2)
 
-dept.update({5:'AI and ML'})
-print ("Update Item in the Dictionary using update() :", dept)
 
-dept1 = {6:'A',7:'B'}
-dept.update(dept1)
-print ("Updating Items in the Dictionary :", dept)
+print("\nMethod 2")
+dept1.update(dept2)
+print ("Concatenated two dictionary :", dept1)
+
+
+print("\nMethod 3")
+dept1.update({4:'AI & DS',5:'AI & ML'})
+print ("Modified existing item      :", dept1)
+
+
+print("\nMethod 4")
+lt = [6,'TXT']
+dept1.update([lt])
+print ("Modified Dictionary      :", dept1)
+
+print("\nMethod 5")
+dept1.update(FT=7,NANO=8)
+print ("Modified Dictionary      :", dept1)
+
+
+print("\nMethod 6")
+dept1[9] = 'BT'
+print ("Modified Dictionary      :", dept1)
+
 
 _________________________________________________________________________
 output
-Items in the Dictionary : {1: 'CSE', 2: 'IT', 3: 'CSBS', 4: 'AIDS', 5: 'AIML'}
-Update Item in the Dictionary using key : {1: 'CSE', 2: 'IT', 3: 'CSBS', 4: 'AI and DS', 5: 'AIML'}
-Update Item in the Dictionary using update() : {1: 'CSE', 2: 'IT', 3: 'CSBS', 4: 'AI and DS', 5: 'AI and ML'}
-Updating Items in the Dictionary : {1: 'CSE', 2: 'IT', 3: 'CSBS', 4: 'AI and DS', 5: 'AI and ML', 6: 'A', 7: 'B'}
-_________________________________________________________________________
+Old courses in CS Dept : {1: 'CSE', 2: 'IT'}
+New courses in CS Dept : {3: 'CSBS', 4: 'AIDS'}
+
+                 ----- Different methods to update ----
+Method 1
+Concatenated two dictionary : {3: 'CSBS', 4: 'AIDS', 5: 'AIML'}
+
+Method 2
+Concatenated two dictionary : {1: 'CSE', 2: 'IT', 3: 'CSBS', 4: 'AIDS', 5: 'AIML'}
+
+Method 3
+Modified existing item      : {1: 'CSE', 2: 'IT', 3: 'CSBS', 4: 'AI & DS', 5: 'AI & ML'}
+
+Method 4
+Modified Dictionary      : {1: 'CSE', 2: 'IT', 3: 'CSBS', 4: 'AI & DS', 5: 'AI & ML', 6: 'TXT'}
+
+Method 5
+Modified Dictionary      : {1: 'CSE', 2: 'IT', 3: 'CSBS', 4: 'AI & DS', 5: 'AI & ML', 6: 'TXT', 'FT': 7, 'NANO': 8}
+
+Method 6
+Modified Dictionary      : {1: 'CSE', 2: 'IT', 3: 'CSBS', 4: 'AI & DS', 5: 'AI & ML', 6: 'TXT', 'FT': 7, 'NANO': 8, 9: 'BT'}_________________________________________________________________________
 
 
 

@@ -1,0 +1,119 @@
+# 1. len() Length of Dictionary
+dept = {1:'CSE',2:'IT',3:'CSBS',4:'AIDS',5:'AIML'}
+print ("Items in the Dictionary :", dept)
+print ("Length of the Dictionary:", len(dept))
+__________________________________________________________________________
+output
+Items in the Dictionary : {1: 'CSE', 2: 'IT', 3: 'CSBS', 4: 'AIDS', 5: 'AIML'}
+Length of the Dictionary: 5
+__________________________________________________________________________
+
+
+# 2. sorted() - sort the keys in Dictionary
+dept = {4:'AIDS',3:'CSBS',2:'IT',1:'CSE',5:'AIML'}
+print ("Before Sorting             :", dept)
+print ("Sorting in ascending order :", sorted(dept))
+print ("Sorting in descending order:", sorted(dept,reverse=True))
+__________________________________________________________________________
+output
+Before Sorting             : {4: 'AIDS', 3: 'CSBS', 2: 'IT', 1: 'CSE', 5: 'AIML'}
+Sorting in ascending order : [1, 2, 3, 4, 5]
+Sorting in descending order: [5, 4, 3, 2, 1]
+__________________________________________________________________________
+
+
+# 3. clear() - remove all the items in the Dictionary
+dept = {4:'AIDS',3:'CSBS',2:'IT',1:'CSE',5:'AIML'}
+print ("Items in the Dictionary before Clearing:", dept)
+dept.clear()
+print ("Items in the Dictionary after Clearing :", dept)
+_________________________________________________________________________
+output
+Items in the Dictionary before Clearing: {4: 'AIDS', 3: 'CSBS', 2: 'IT', 1: 'CSE', 5: 'AIML'}
+Items in the Dictionary after Clearing : {}
+_________________________________________________________________________
+
+
+
+# 4. pop() and popitem() - remove all the items in the Dictionary
+print("~~~~~~~~~~~~ updated dictionary displayed after popping ~~~~~~~~~~~~\n")
+dept = {1:'CSE',2:'IT',3:'CSBS',4:'AIDS',5:'AIML'}
+print ("Items in the Dictionary    :", dept)
+dept.pop(1)
+print ("Item removed with key '1'  :", dept)
+dept.popitem()
+print ("Recently added item removed:", dept)
+
+print("\n~~~~~~~~~~~~~~~~~~~~~~ Display popped Item ~~~~~~~~~~~~~~~~~~~~~~\n")
+dept = {1:'CSE',2:'IT',3:'CSBS',4:'AIDS',5:'AIML'}
+print ("Items in the Dictionary    :", dept)
+print ("Item removed with key '3'  :", dept.pop(3))
+print ("Recently added item removed:", dept.popitem())
+
+
+
+_________________________________________________________________________
+output
+~~~~~~~~~~~~ updated dictionary displayed after popping ~~~~~~~~~~~~
+
+Items in the Dictionary    : {1: 'CSE', 2: 'IT', 3: 'CSBS', 4: 'AIDS', 5: 'AIML'}
+Item removed with key '1'  : {2: 'IT', 3: 'CSBS', 4: 'AIDS', 5: 'AIML'}
+Recently added item removed: {2: 'IT', 3: 'CSBS', 4: 'AIDS'}
+
+~~~~~~~~~~~~~~~~~~~~~~ Display popped Item ~~~~~~~~~~~~~~~~~~~~~~
+
+Items in the Dictionary    : {1: 'CSE', 2: 'IT', 3: 'CSBS', 4: 'AIDS', 5: 'AIML'}
+Item removed with key '3'  : CSBS
+Recently added item removed: (5, 'AIML')
+_________________________________________________________________________
+
+
+
+# 5. get() - get the value of the specified key in the Dictionary
+dept = {1:'CSE',2:'IT',3:'CSBS',4:'AIDS',5:'AIML'}
+print ("Items in the Dictionary :", dept)
+print ("Accessing using get()   :", dept.get(5))
+print ("Accessing using index   :", dept[5])
+print("\n")
+print ("Accessing using get()   :", dept.get(6))
+print ("Accessing using index   :", dept[6])
+_________________________________________________________________________
+output
+Items in the Dictionary : {1: 'CSE', 2: 'IT', 3: 'CSBS', 4: 'AIDS', 5: 'AIML'}
+Accessing using get()   : AIML
+Accessing using index   : AIML
+
+Accessing using get()   : None
+Traceback (most recent call last):
+  File "/home/main.py", line 8, in <module>
+    print ("Accessing using index   :", dept[6])
+KeyError: 6
+_________________________________________________________________________
+
+
+
+# 6. update() - update the value in the Dictionary
+dept = {1:'CSE',2:'IT',3:'CSBS',4:'AIDS',5:'AIML'}
+print ("Items in the Dictionary :", dept)
+
+dept[4] = 'AI and DS'
+print ("Update Item in the Dictionary using key :", dept)
+
+dept.update({5:'AI and ML'})
+print ("Update Item in the Dictionary using update() :", dept)
+
+dept1 = {6:'A',7:'B'}
+dept.update(dept1)
+print ("Updating Items in the Dictionary in the Dictionary :", dept)
+
+_________________________________________________________________________
+output
+Items in the Dictionary : {1: 'CSE', 2: 'IT', 3: 'CSBS', 4: 'AIDS', 5: 'AIML'}
+Update Item in the Dictionary using key : {1: 'CSE', 2: 'IT', 3: 'CSBS', 4: 'AI and DS', 5: 'AIML'}
+Update Item in the Dictionary using update() : {1: 'CSE', 2: 'IT', 3: 'CSBS', 4: 'AI and DS', 5: 'AI and ML'}
+Updating Items in the Dictionary in the Dictionary : {1: 'CSE', 2: 'IT', 3: 'CSBS', 4: 'AI and DS', 5: 'AI and ML', 6: 'A', 7: 'B'}
+_________________________________________________________________________
+
+
+
+

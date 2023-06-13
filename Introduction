@@ -13,6 +13,7 @@ output
 ______________________________________________________________________________
 
 
+
 # Creating Dictionary with mixed data types
 course = {'aiml':1,'aids':[1,2],'cse' :(1,2,3,4)}
 print ("Data Type :",type(course))
@@ -36,6 +37,7 @@ Elements in the Dictionary : {1: 'Ajay', 2: 'Akshay', 3: 'Anjanaa'}
 First Item : Ajay
 Second Item: Akshay
 ______________________________________________________________________________
+
 
 
 
@@ -68,6 +70,7 @@ ______________________________________________________________________________
 
 
 
+
 # Changing Elements
 aiml = {1:'Ajay',2:'Akshay',3:'Anjanaa',4:'Abinaya'}
 print ("Elements in the Dictionary     :", aiml)
@@ -79,6 +82,7 @@ output
 Elements in the Dictionary     : {1: 'Ajay', 2: 'Akshay', 3: 'Anjanaa', 4: 'Abinaya'}
 Elements after changing item   : {1: 'Ajay', 2: 'Akshay', 3: 'Akshara', 4: 'Abinaya'}
 ______________________________________________________________________________
+
 
 
 
